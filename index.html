@@ -27,7 +27,7 @@ function ivCommonInit3d() {
     view3d = new iv.window({ canvas: canvas, color: null });
     var mv = new iv.modelviews(view3d);
     view3d.load("xxxx.iv3d");
-	view3d.ivPlayAnimation("xxxx.iv3d");
+	view3d.ivPlayAnimation();
 }
 
 window.onresize = function(){view3d.setViewSize(window.innerWidth,window.innerHeight);}
