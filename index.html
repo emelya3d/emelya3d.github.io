@@ -27,7 +27,10 @@ function ivCommonInit3d() {
 }
 
 window.onresize = function(){view3d.setViewSize(window.innerWidth,window.innerHeight);}
-
+function ivPlayAnimation()
+	  {
+	  view3d.playAnimation({speed:1,type:1,count:-1,from:1,to:100});
+	  }
 </script>
 
 </head>
