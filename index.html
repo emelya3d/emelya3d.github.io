@@ -21,7 +21,7 @@ function ivCommonInit3d() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    view3d = new iv.window({ canvas: canvas, color: null });
+    view3d = new iv.window({ canvas: canvas, color: 0x777777 });
     var mv = new iv.modelviews(view3d);
     view3d.load("xxxx.iv3d");
 }
