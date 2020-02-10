@@ -15,7 +15,10 @@ body {
 </style>
 <script type="text/javascript">
 var view3d;
-
+function ivPlayAnimation()
+	  {
+	  view3d.playAnimation({speed:1,type:1,count:-1,from:1,to:100});
+	  }
 function ivCommonInit3d() {
     var canvas = document.getElementById("ivwindow3d");
     canvas.width = window.innerWidth;
@@ -24,13 +27,11 @@ function ivCommonInit3d() {
     view3d = new iv.window({ canvas: canvas, color: null });
     var mv = new iv.modelviews(view3d);
     view3d.load("xxxx.iv3d");
+	view3d.ivPlayAnimation("xxxx.iv3d");
 }
 
 window.onresize = function(){view3d.setViewSize(window.innerWidth,window.innerHeight);}
-function ivPlayAnimation()
-	  {
-	  view3d.playAnimation({speed:1,type:1,count:-1,from:1,to:100});
-	  }
+
 </script>
 
 </head>
